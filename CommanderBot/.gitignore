@@ -1,0 +1,5 @@
+config.json
+/Migrations/*
+/obj/*
+/bin/*
+/.vs/*

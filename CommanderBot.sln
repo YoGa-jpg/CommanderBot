@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommanderBot", "CommanderBot\CommanderBot.csproj", "{334BF592-DE45-48DD-B232-650733792712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{334BF592-DE45-48DD-B232-650733792712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334BF592-DE45-48DD-B232-650733792712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334BF592-DE45-48DD-B232-650733792712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334BF592-DE45-48DD-B232-650733792712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B10C68A-42D4-410F-9209-0A59DE592C9C}
+	EndGlobalSection
+EndGlobal
