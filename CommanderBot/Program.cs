@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var bot = new CommanderBot();
+            var bot = new CommanderBot.Bot();
             bot.RunAsync().GetAwaiter().GetResult();
         }
     }

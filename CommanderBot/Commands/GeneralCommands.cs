@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using CommanderBot.Model;
 using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
@@ -9,24 +10,12 @@ namespace CommanderBot.Commands
 {
     public class GeneralCommands : BaseCommandModule
     {
-        [Command("menu")]
-        public async Task MenuCommand(CommandContext ctx)
+        [Command("link")]
+        public async Task LinkAccount(CommandContext ctx, string url)
         {
-            var user = ctx.User;
-
-            var a = new DiscordButtonComponent(ButtonStyle.Success, "ratingButton", "Рейтинг");
-
-            var options = new List<DiscordButtonComponent>()
-            {
-                new DiscordButtonComponent(ButtonStyle.Success, "ratingButton", "Рейтинг"),
-                new DiscordButtonComponent(ButtonStyle.Primary, "guildButton", "Сервер"),
-                new DiscordButtonComponent(ButtonStyle.Danger, "powerButton", "Власть")
-            };
-
-            var builder = await new DiscordMessageBuilder()
-                .WithContent("Ваш главный штаб")
-                .AddComponents(options)
-                .SendAsync(ctx.Channel);
+            Steam steam = new Steam();
+            var profile = await steam.GetProfile(url);
+            await ctx.RespondAsync(profile.ToString());
         }
     }
 }
