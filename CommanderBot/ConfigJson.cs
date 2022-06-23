@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CommanderBot
+namespace ProfileBot
 {
     public class ConfigJson
     {

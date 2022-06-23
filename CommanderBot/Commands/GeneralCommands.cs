@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using CommanderBot.Model;
-using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
-using DSharpPlus.Entities;
+using ProfileBot.Model;
 
-namespace CommanderBot.Commands
+namespace ProfileBot.Commands
 {
     public class GeneralCommands : BaseCommandModule
     {
